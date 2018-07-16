@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginBottom="30dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/warn_message_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog"
+        android:layout_margin="16dp"
+        >
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="报警信息"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="18sp"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:textColor="@color/whilecolor"-->
+            <!--android:padding="12dp"-->
+            <!--/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/warn_message_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingBottom="12dp"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/dismiss_dialog_iv"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/warn_message_list_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/icon_cancle_dialog" />
+
+</RelativeLayout>

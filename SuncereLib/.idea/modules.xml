@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Suncere.DongHuGaoXin.AndroidApp.iml" filepath="$PROJECT_DIR$/../Suncere.DongHuGaoXin.AndroidApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuncereLib.iml" filepath="$PROJECT_DIR$/SuncereLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+    </modules>
+  </component>
+</project>

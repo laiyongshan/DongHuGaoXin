@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
+    defaultConfig {
+        applicationId "androidapp.donghugaoxin.suncere.com"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        sourceSets {
+            main.jniLibs.srcDirs = ['libs']
+        }
+
+        /*****************        极光推送          **************/
+        ndk {
+            abiFilters 'armeabi'//,// 'armeabi-v7a', 'arm64-v8a'  //选择要添加的对应cpu类型的.so库。
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "57557a3ece8e81d648267882", //JPush上注册的包名对应的appkey. 测试key:88855cddb6b25b60a92e5ba9
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+
+
+        buildTypes {
+            release {
+                minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+
+        multiDexEnabled true
+//        dataBinding {
+//            enabled = true
+//        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+
+    compile project(':SuncereLib')
+
+    apply plugin: 'com.jakewharton.butterknife'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+
+    //BRAVH
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.+'
+
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+
+    compile 'com.zhihu.android:matisse:0.5.0-alpha4'
+    compile 'com.jaywei:compresstool:1.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'//Glide
+
+    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+
+    compile 'com.android.support:multidex:1.0.0'
+
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    compile 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+//    implementation 'pub.devrel:easypermissions:1.2.0'
+}

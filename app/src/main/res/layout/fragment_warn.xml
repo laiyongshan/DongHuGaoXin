@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whilecolor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_size"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/map_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="站点报警信息"
+            android:textColor="#fff"
+            android:textSize="@dimen/title_size" />
+
+    </RelativeLayout>
+
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textColor="#ffffff"
+        rv:rv_backgroundColor="#9987b3fb"
+        rv:rv_cornerRadius="5dp"
+        android:visibility="gone"
+        >
+
+    </com.flyco.roundview.RoundLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="报警情况及情况描述"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#f0f0f0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/cardview_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/warn_condition_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入现场报警情况及处理情况"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pic_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:paddingRight="16dp"
+                android:scrollbars="none"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/take_pic_iv"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/take_pic_img"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_commit_button2"
+            android:padding="6dp"
+            android:text="提  交"
+            android:textColor="@color/whilecolor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

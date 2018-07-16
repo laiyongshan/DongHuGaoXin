@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="color|reference|string"/>
+    <declare-styleable name="PollutantsView">
+        <attr name="pollutantsTexts" format="string"></attr>
+        <attr name="pollutantsCodes" format="string"></attr>
+        <attr name="selectPollutantTextColor" format="color"></attr>
+        <attr name="selectPollutantTextBackground" format="reference"></attr>
+        <attr name="unSelectPollutantTextColor" format="color"></attr>
+        <attr name="unSelectPollutantTextBackground" format="reference"></attr>
+        <attr name="defaultSelectPollutantIndex" format="integer"></attr>
+        <attr name="pollutantstextSize" format="integer"></attr>
+        <attr name="pollutantstextHeight" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="segmentcontrol">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <attr name="colors" format="color|reference" />
+        <attr name="backgroundColor"/>
+        <attr name="texts" format="string|reference" />
+        <attr name="android:textSize" />
+        <attr name="direction" format="enum">
+            <enum name="horizon" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="gaps" format="dimension|reference" />
+        <attr name="horizonGap" format="dimension|reference" />
+        <attr name="verticalGap" format="dimension|reference" />
+        <attr name="selectTextColor" format="color|reference"/>
+        <attr name="unselectTextColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollTextView">
+        <attr name="speed" format="integer"/>
+        <attr name="pause" format="integer"/>
+        <attr name="autoStart" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LineChart">
+        <attr name="YScaleCount" format="integer"/>  <!-- Y 轴上的刻度数-->
+        <attr name="XScaleCount" format="integer"/>  <!-- X 轴上的刻度数-->
+        <attr name="MarginLeft" format="dimension"/> <!-- 画 Y 轴刻度值部分宽度 -->
+        <attr name="MarginBottom" format="dimension"/> <!-- 画 X 轴刻度值部分宽度 -->
+    </declare-styleable>
+
+</resources>

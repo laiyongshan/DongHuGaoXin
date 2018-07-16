@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#488BF7</color>
+    <color name="colorPrimaryDark">#488BF7</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="lucency">#00000000</color>
+
+
+    <color name="red">#ff0000</color>
+    <color name="yellow">#f6eb06</color>
+    <color name="orige">#f67d06</color>
+
+    <color name="colorOfLine">#55ffffff</color>
+    <color name="colorOfbg">#4d000000</color>
+    <color name="colorSelectText">#67B9EF</color>
+    <color name="color_black">#444</color>
+
+    <color name="titleColor">#0F91FF</color>
+
+    <color name="followCityItmeBg">#E8EFF9</color>
+    <color name="unfollowCityItmeBg">#00000000</color>
+    <color name="mytrans">#00ffffff</color>
+    <color name="partTranslucent">#39000000</color>
+    <color name="gra">#DCDCDC</color> <!-- 大部分的浅色字体 -->
+
+
+    <color name="moretextcorol">#333333</color> <!-- 大部分的字体颜色 -->
+    <color name="moretextcorol2">#999999</color> <!-- 大部分的浅色字体 -->
+    <color name="moretextcorol3">#000033</color> <!-- 大部分的浅色字体 -->
+    <color name="whilecolor">#ffffff</color> <!-- 大部分的浅色字体 -->
+    <color name="line_color">#99FFFFFF</color>
+</resources>

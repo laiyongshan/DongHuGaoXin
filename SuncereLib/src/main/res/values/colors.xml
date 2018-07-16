@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- AQI颜色  -->
+    <color name="aqi_1g">#00e400</color>
+    <color name="aqi_2g">#ffff00</color>
+    <color name="aqi_3g">#ff7e00</color>
+    <color name="aqi_4g">#ff0000</color>
+    <color name="aqi_5g">#99004c</color>
+    <color name="aqi_6g">#7e0023</color>
+    <color name="aqi_na">#A9A9A9</color>
+
+    <!-- 半透明色 -->
+    <color name="glass">#200000ff</color>
+
+    <!-- 遮罩层本透明色 -->
+    <color name="mask_background">#00ffffff</color>
+    <color name="mytrans">#33ffffff</color>
+    <color name="moretextcorol2">#868686</color> <!-- 大部分的浅色字体 -->
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_chart_pollutant_itme_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/zonghezhishu_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <suncere.androidapp.lib.customview.PollutantNameTextView
+                android:id="@+id/zonghezhishu"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:tag="0"
+                android:text="综合指数"
+                android:textColor="@android:color/darker_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dabiaolv_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <suncere.androidapp.lib.customview.PollutantNameTextView
+                android:id="@+id/dabiaolv"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:tag="1"
+                android:text="达标率"
+                android:textColor="@android:color/darker_gray"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AQI_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <suncere.androidapp.lib.customview.PollutantNameTextView
+                android:id="@+id/AQI"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:tag="2"
+                android:text="AQI"
+                android:textColor="@android:color/darker_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/SO2"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:tag="3"
+            android:text="SO2"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/NO2"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:tag="4"
+            android:text="NO2"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/CO"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:tag="6"
+            android:text="CO"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/O3"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:tag="7"
+            android:text="O3"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/PM2_5"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:tag="8"
+            android:text="PM2.5"
+            android:textColor="@android:color/darker_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/PM10"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:tag="5"
+            android:text="PM10"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+</ScrollView>

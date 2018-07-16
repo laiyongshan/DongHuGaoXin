@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="246dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/map_stationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="站点"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:singleLine="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/aqi_value_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_rect_aqi_1"
+            android:layout_centerVertical="true"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/AQI_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AQI"
+                android:textColor="@color/whilecolor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/AQI_tv"
+                android:text="--"
+                android:textColor="@color/whilecolor"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/aqi_value_layout"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:padding="3dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:id="@+id/AQI_Quality_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="质量等级：——"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/primary_pollut_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首要污染物：——"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        >
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/pm10_value_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_map_markwin_pollutants"
+            android:text="PM10："
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/pm25_value_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_map_markwin_pollutants"
+            android:text="PM2.5："
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@drawable/bg_map_markwin_pollutants"
+        >
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/no2_value_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_map_markwin_pollutants"
+            android:text="  NO2："
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/pmSO2_value_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_map_markwin_pollutants"
+            android:text="   SO2："
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@drawable/bg_map_markwin_pollutants"
+        >
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/pmO3_value_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_map_markwin_pollutants"
+            android:text="     O3："
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+
+        <suncere.androidapp.lib.customview.PollutantNameTextView
+            android:id="@+id/co_value_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_map_markwin_pollutants"
+            android:text="     CO："
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/marker_value_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="&#45;&#45;"-->
+    <!--android:textSize="16sp"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingTop="2dp"-->
+    <!--android:paddingBottom="2dp"-->
+    <!--android:paddingLeft="12dp"-->
+    <!--android:paddingRight="12dp"-->
+    <!--android:textColor="@color/whilecolor"-->
+    <!--/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/marker_level_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="-"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/color_black"-->
+    <!--android:textSize="24sp"-->
+    <!--android:layout_marginLeft="12dp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="首要污染物："-->
+    <!--android:textSize="32px"-->
+    <!--android:layout_marginTop="6dp"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/map_Quality"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="优"-->
+    <!--android:textSize="32px"-->
+    <!--android:layout_marginTop="6dp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/map_station_data_btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="28dp"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/whilecolor"-->
+    <!--android:textSize="14sp"-->
+    <!--android:text="实时数据"-->
+    <!--android:background="@drawable/bg_login_button"-->
+    <!--/>-->
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whilecolor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+
+        <TextView
+            android:id="@+id/sort_num_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+        <androidapp.donghugaoxin.suncere.com.customview.AlwaysMarqueeTextView
+            android:id="@+id/sort_station_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/sort_AQI_value_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14sp"
+            />
+
+
+        <TextView
+            android:id="@+id/sort_PM2_5_value_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/sort_PM10_value_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="14sp"
+            />
+
+
+    </LinearLayout>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#fff"
+        />
+
+</LinearLayout>

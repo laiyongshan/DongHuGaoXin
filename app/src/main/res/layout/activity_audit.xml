@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_size"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_back"
+
+            />
+
+        <TextView
+            android:id="@+id/map_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="审核处理"
+            android:textColor="#fff"
+            android:textSize="@dimen/title_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:textColor="#ffffff"
+            rv:rv_backgroundColor="#9987b3fb"
+            rv:rv_cornerRadius="5dp">
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="报警情况及情况描述"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#f0f0f0" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/warn_condition_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/moretextcorol"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/scene_pic_rv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="26dp"
+            >
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/pass_round_tv"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:padding="10dp"
+                android:layout_margin="16dp"
+                android:text="通  过"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/whilecolor"
+                android:layout_weight="1"
+                rv:rv_backgroundColor="@color/colorPrimary"
+                rv:rv_backgroundPressColor="#383838"
+                rv:rv_cornerRadius="6dip"
+                rv:rv_strokeColor="@color/colorPrimary"
+                rv:rv_strokeWidth="1dp"
+                rv:rv_textPressColor="#ffffff" />
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/no_pass_round_tv"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:padding="10dp"
+                android:layout_margin="16dp"
+                android:textSize="14sp"
+                android:text="不通过"
+                android:gravity="center"
+                android:textColor="#383838"
+                android:layout_weight="1"
+                rv:rv_backgroundColor="#ffffff"
+                rv:rv_backgroundPressColor="#383838"
+                rv:rv_cornerRadius="6dip"
+                rv:rv_strokeColor="@color/colorPrimary"
+                rv:rv_strokeWidth="1dp"
+                rv:rv_textPressColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

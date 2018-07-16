@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/warn_message_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/general_warn_bg1"
+        >
+
+        <TextView
+            android:id="@+id/warn_level_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:ems="1"
+            android:padding="13dp"
+            android:layout_margin="1.5dp"
+            android:text="一般"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_toRightOf="@+id/warn_level_tv"
+            android:layout_toLeftOf="@+id/more_warn_iv"
+            >
+
+            <TextView
+                android:id="@+id/warn_type_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/moretextcorol"
+                android:text="站点一PM10浓度值报警"
+                />
+
+            <TextView
+                android:id="@+id/wran_updata_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textSize="14sp"
+                android:textColor="@color/moretextcorol2"
+                android:text="2018年05月30日 13:00"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/more_warn_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/icon_more_warn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

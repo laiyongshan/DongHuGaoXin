@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.flyco.roundview:FlycoRoundView_Lib-1.1.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FlycoRoundView_Lib-1.1.4.aar/11ffca940a721abe5c1521a803a5d605/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FlycoRoundView_Lib-1.1.4.aar/11ffca940a721abe5c1521a803a5d605/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.flyco.roundview/FlycoRoundView_Lib/1.1.4/a5b143b6794fdd1d9002f19968d500b36dc270ed/FlycoRoundView_Lib-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

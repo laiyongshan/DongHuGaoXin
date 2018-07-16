@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="#fff">
+	<!--<View-->
+		<!--android:id="@+id/fake_status_bar"-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="@dimen/statusbar_view_height"-->
+		<!--android:background="#EEE8E4"/>-->
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="46dp"
+	    android:background="@color/colorPrimary"
+		android:textColor="@color/whilecolor"
+	    android:gravity="center"
+        android:textSize="21sp"
+	    android:text="设   置"/>
+
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dp"
+	    android:background="#DFD7D1"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/round_rect_aqi_des"
+	    android:layout_marginTop="38dp"
+	    android:layout_marginLeft="22dp"
+	    android:layout_marginRight="22dp"
+	    android:orientation="vertical">
+	    <LinearLayout 
+
+	        android:id="@+id/set_MenuItemAirDes"
+	        android:layout_width="fill_parent"
+	        android:layout_height="38dp"
+	        android:paddingLeft="21dp"
+	        android:orientation="horizontal">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="16dp"
+	            android:src="@drawable/aqi_des"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="空气污染级别说明"
+	            android:textSize="16sp"
+	            />
+	    </LinearLayout>
+	    
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#eee"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/set_MenuItemSysDes"
+	        android:layout_width="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="38dp"
+	        android:paddingLeft="21dp">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/sys_des"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="16dp"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="系统说明"
+	              android:textSize="16sp"/>
+	    </LinearLayout>
+	    
+	   
+	     
+	    <View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#eee"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/set_MenuItemOption"
+	        android:layout_width="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="38dp"
+	        android:paddingLeft="21dp"
+			android:visibility="gone">
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/option_des"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="16dp"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="操作说明"
+	              android:textSize="16sp"/>
+	    </LinearLayout>
+	    
+	     <!--<View -->
+	        <!--android:layout_width="fill_parent"-->
+	        <!--android:layout_height="0.5dp"-->
+	        <!--android:background="#eee"/>-->
+	    
+
+	 <!--   <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#eee"/>
+	    <LinearLayout
+	        android:id="@+id/set_MenuItemUpdate"
+	        android:layout_width="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="38dp"
+	        android:paddingLeft="21dp">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/update"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="16dp"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="检查更新"
+	              android:textSize="16sp"/>
+	    </LinearLayout>-->
+	    <View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:background="#eee"/>
+	    <LinearLayout
+	        android:id="@+id/set_MenuItmeAbout"
+	        android:layout_width="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_height="38dp"
+	        android:paddingLeft="21dp">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/about_me"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="16dp"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="关于我们"
+	              android:textSize="16sp"/>
+	    </LinearLayout>
+
+	</LinearLayout>
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_height="38dp"
+		android:paddingLeft="31dp"
+		android:paddingRight="31dp"
+		android:layout_marginBottom="20dp">
+
+		<Button
+			android:id="@+id/set_button_exit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bg_login_button_exit"
+			android:text="退出"
+			android:textColor="#fff"
+			android:visibility="visible"/>
+
+	</LinearLayout>
+	<!--<TextView-->
+		<!--android:id="@+id/textView"-->
+		<!--android:layout_width="fill_parent"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_gravity="center"-->
+		<!--android:gravity="center"-->
+		<!--android:text="湖北省环境监测中心站"-->
+		<!--android:textSize="16sp" />-->
+
+	<TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:layout_marginTop="12dp"
+         android:layout_marginBottom="31dp"
+         android:textSize="14sp"
+         android:text="技术支持：武汉天虹环保产业股份有限公司
+"/>
+
+</LinearLayout>
